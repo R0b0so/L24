@@ -18,3 +18,5 @@ while True:
  elif guess == number:
     print("Congrats,",name,"you found the number in",counter,"attempts")
     break
+ if counter >= 3:
+    print("hint:", number - random.randint(1,20) or number + random.randint(1,20), " The number is near this number")
